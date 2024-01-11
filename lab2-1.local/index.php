@@ -7,14 +7,14 @@ use Php2\Oop\Controller\BaseController;
 use Php2\Oop\Model\BaseModel;
 
 $data = new Database();
+$tcnmodel = new BaseModel();
+$tcnvip = new BaseController();
+$tcnn = new Route();
     echo $data ->getName();
     echo "<br/>";
-$tcnn = new Route();
     echo $tcnn ->getTCNNN();
     echo "<br/>";
-$tcnvip = new BaseController();
     echo $tcnvip -> getnhantong();
     echo "<br/>";
-$tcnmodel = new BaseModel();
     echo $tcnmodel -> getModel();
 ?>

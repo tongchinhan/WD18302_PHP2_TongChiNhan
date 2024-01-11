@@ -10,11 +10,11 @@ $data = new Database();
 $tcnmodel = new BaseModel();
 $tcnvip = new BaseController();
 $tcnn = new Route();
-    echo $data ->getName();
-    echo "<br/>";
-    echo $tcnn ->getTCNNN();
-    echo "<br/>";
-    echo $tcnvip -> getnhantong();
-    echo "<br/>";
+    echo $data ->getName() . "<br/>";
+
+    echo $tcnn ->getTCNNN() . "<br/>";
+ 
+    echo $tcnvip -> getnhantong() . "<br/>";
+
     echo $tcnmodel -> getModel();
 ?>

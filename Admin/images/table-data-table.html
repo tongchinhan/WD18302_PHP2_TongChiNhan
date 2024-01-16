@@ -60,10 +60,10 @@
       </li>
       <li><a class="app-menu__item" href="table-data-oder.html"><i class='app-menu__icon bx bx-task'></i><span
             class="app-menu__label">Danh Sách Bình Luận</span></a></li>
-      <li><a class="app-menu__item" href="danhsachnguoidung.html"><i class='app-menu__icon bx bx-task'></i><span
+      <li><a class="app-menu__item" href="table-data-oder.html"><i class='app-menu__icon bx bx-task'></i><span
         class="app-menu__label">Danh Sách Người Dùng</span></a>
       </li>
-      <li><a class="app-menu__item" href="danhsachdanhgia.html"><i class='app-menu__icon bx bx-task'></i><span
+      <li><a class="app-menu__item" href="table-data-oder.html"><i class='app-menu__icon bx bx-task'></i><span
         class="app-menu__label">Danh Sách Đánh Gía</span></a>
       </li>
       <!-- <li><a class="app-menu__item" href="table-data-banned.html"><i class='app-menu__icon bx bx-run'></i><span
@@ -130,28 +130,31 @@
               <thead>
                 <tr>
                   <th width="10"><input type="checkbox" id="all"></th>
-                  <th>ID nhân viên</th>
-                  <th width="150">Họ và tên</th>
-                  <th width="20">Ảnh thẻ</th>
-                  <th width="300">Địa chỉ</th>
-                  <th>Ngày sinh</th>
-                  <th>Giới tính</th>
-                  <th>SĐT</th>
-                  <th>Chức vụ</th>
+                  <th>Mã Tài Liệu</th>
+                  <th width="150">Tên Tài Liệu</th>
+                  <th width="20">Ảnh Tài Lệu</th>
+                  <th width="50">Loại Tài Liệu</th>
+                  <th>Số Lượng</th>
+                  <th>Tiêu Đề</th>
+                  <th>Ngày Tạo</th>
+                  <th>Người Soạn</th>
+                  <th>Miêu Tả</th>
+                  
                   <th width="100">Tính năng</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>#CD12837</td>
-                  <td>Hồ Thị Thanh Ngân</td>
-                  <td><img class="img-card-person" src="/img-anhthe/1.jpg" alt=""></td>
-                  <td>155-157 Trần Quốc Thảo, Quận 3, Hồ Chí Minh </td>
-                  <td>12/02/1999</td>
-                  <td>Nữ</td>
-                  <td>0926737168</td>
-                  <td>Bán hàng</td>
+                  <td>#111</td>
+                  <td>Sách Hướng Dẫn Làm giàu</td>
+                  <td><img class="img-card-person" src="../img-sanpham/sp1.jpg" alt=""></td>
+                  <td>Sách</td>
+                  <td>Số Lượng</td>
+                  <td>Không Làm Vẫn Có Tiền</td>
+                  <td>31/12/2004</td>
+                  <td>Tống Chí Nhân</td>
+                  <td>Sách Sẽ hướng dẫn bạn chỉ ngoi chơi ăn bánh uống trà và nhận mức lương 2k$ mỗi tháng . Tôi làm được bạn cũng thế</td>
                   <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
                       onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                     </button>
@@ -161,16 +164,17 @@
                   </td>
                 </tr>
                 <tr>
-                  <td width="10"><input type="checkbox" name="check2" value="2"></td>
-                  <td>#SX22837</td>
-                  <td>Trần Khả Ái</td>
-                  <td><img class="img-card-person" src="/img-anhthe/2.jpg" alt=""></td>
-                  <td>6 Nguyễn Lương Bằng, Tân Phú, Quận 7, Hồ Chí Minh</td>
-                  <td>22/12/1999</td>
-                  <td>Nữ</td>
-                  <td>0931342432</td>
-                  <td>Bán hàng</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
+                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                  <td>#111</td>
+                  <td>Sách Hướng Dẫn Làm giàu</td>
+                  <td><img class="img-card-person" src="../img-sanpham/sp1.jpg" alt=""></td>
+                  <td>Sách</td>
+                  <td>Số Lượng</td>
+                  <td>Không Làm Vẫn Có Tiền</td>
+                  <td>31/12/2004</td>
+                  <td>Tống Chí Nhân</td>
+                  <td>Sách Sẽ hướng dẫn bạn chỉ ngoi chơi ăn bánh uống trà và nhận mức lương 2k$ mỗi tháng . Tôi làm được bạn cũng thế</td>
+                  <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
                       onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                     </button>
                     <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
@@ -179,17 +183,18 @@
                   </td>
                 </tr>
                 <tr>
-                  <td width="10"><input type="checkbox" name="check3" value="3"></td>
-                  <td>#LO2871</td>
-                  <td>Phạm Thu Cúc</td>
-                  <td><img class="img-card-person" src="/img-anhthe/3.jpg" alt=""></td>
-                  <td>Số 3 Hòa Bình, Phường 3, Quận 11, Hồ Chí Minh </td>
-                  <td>02/06/1998</td>
-                  <td>Nữ</td>
-                  <td>0931491997</td>
-                  <td>Thu ngân</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
+                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                  <td>#111</td>
+                  <td>Sách Hướng Dẫn Làm giàu</td>
+                  <td><img class="img-card-person" src="../img-sanpham/sp1.jpg" alt=""></td>
+                  <td>Sách</td>
+                  <td>Số Lượng</td>
+                  <td>Không Làm Vẫn Có Tiền</td>
+                  <td>31/12/2004</td>
+                  <td>Tống Chí Nhân</td>
+                  <td>Sách Sẽ hướng dẫn bạn chỉ ngoi chơi ăn bánh uống trà và nhận mức lương 2k$ mỗi tháng . Tôi làm được bạn cũng thế</td>
+                  <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
+                      onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                     </button>
                     <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
                       data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
@@ -197,17 +202,18 @@
                   </td>
                 </tr>
                 <tr>
-                  <td width="10"><input type="checkbox"></td>
-                  <td>#SR28746</td>
-                  <td>Trần Anh Khoa</td>
-                  <td><img class="img-card-person" src="/img-anhthe/4.jpg" alt=""></td>
-                  <td>19 Đường Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Hồ Chí Minh </td>
-                  <td>18/02/1995</td>
-                  <td>Nam</td>
-                  <td>0916706633</td>
-                  <td>Tư vấn</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
+                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                  <td>#111</td>
+                  <td>Sách Hướng Dẫn Làm giàu</td>
+                  <td><img class="img-card-person" src="../img-sanpham/sp1.jpg" alt=""></td>
+                  <td>Sách</td>
+                  <td>Số Lượng</td>
+                  <td>Không Làm Vẫn Có Tiền</td>
+                  <td>31/12/2004</td>
+                  <td>Tống Chí Nhân</td>
+                  <td>Sách Sẽ hướng dẫn bạn chỉ ngoi chơi ăn bánh uống trà và nhận mức lương 2k$ mỗi tháng . Tôi làm được bạn cũng thế</td>
+                  <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
+                      onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                     </button>
                     <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
                       data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
@@ -215,17 +221,18 @@
                   </td>
                 </tr>
                 <tr>
-                  <td width="10"><input type="checkbox"></td>
-                  <td>#KJS276</td>
-                  <td>Nguyễn Thành Nhân</td>
-                  <td><img class="img-card-person" src="/img-anhthe/5.jpg" alt=""></td>
-                  <td>Số 13, Tân Thuận Đông, Quận 7, Hồ Chí Minh </td>
-                  <td>10/03/1996</td>
-                  <td>Nam</td>
-                  <td>0971038066</td>
-                  <td>Bảo trì</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
+                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                  <td>#111</td>
+                  <td>Sách Hướng Dẫn Làm giàu</td>
+                  <td><img class="img-card-person" src="../img-sanpham/sp1.jpg" alt=""></td>
+                  <td>Sách</td>
+                  <td>Số Lượng</td>
+                  <td>Không Làm Vẫn Có Tiền</td>
+                  <td>31/12/2004</td>
+                  <td>Tống Chí Nhân</td>
+                  <td>Sách Sẽ hướng dẫn bạn chỉ ngoi chơi ăn bánh uống trà và nhận mức lương 2k$ mỗi tháng . Tôi làm được bạn cũng thế</td>
+                  <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
+                      onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                     </button>
                     <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
                       data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
@@ -233,38 +240,21 @@
                   </td>
                 </tr>
                 <tr>
-                  <td width="10"><input type="checkbox"></td>
-                  <td>#BS76228</td>
-                  <td>Nguyễn Đặng Trọng Nhân</td>
-                  <td><img class="img-card-person" src="/img-anhthe/6.jpg" alt=""></td>
-                  <td>59C Nguyễn Đình Chiểu, Quận 3, Hồ Chí Minh </td>
-                  <td>23/07/1996</td>
-                  <td>Nam</td>
-                  <td>0846881155</td>
-                  <td>Dịch vụ</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
+                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                  <td>#111</td>
+                  <td>Sách Hướng Dẫn Làm giàu</td>
+                  <td><img class="img-card-person" src="../img-sanpham/sp1.jpg" alt=""></td>
+                  <td>Sách</td>
+                  <td>Số Lượng</td>
+                  <td>Không Làm Vẫn Có Tiền</td>
+                  <td>31/12/2004</td>
+                  <td>Tống Chí Nhân</td>
+                  <td>Sách Sẽ hướng dẫn bạn chỉ ngoi chơi ăn bánh uống trà và nhận mức lương 2k$ mỗi tháng . Tôi làm được bạn cũng thế</td>
+                  <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
+                      onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                     </button>
                     <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
                       data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="10"><input type="checkbox"></td>
-                  <td>#YUI21376</td>
-                  <td>Nguyễn Thị Mai</td>
-                  <td><img class="img-card-person" src="/img-anhthe/4.jpg" alt=""></td>
-                  <td>Đường Số 3, Tân Tạo A, Bình Tân, Hồ Chí Minh</td>
-                  <td>09/12/2000</td>
-                  <td>Nữ </td>
-                  <td>0836333037</td>
-                  <td>Tư vấn</td>
-                  <td><button class="btn btn-primary btn-sm trash" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
-                    </button>
-                    <button class="btn btn-primary btn-sm edit" title="Sửa" id="show-emp" data-toggle="modal"
-                      data-target="#ModalUP"><i class="fas fa-edit"></i>
                     </button>
                   </td>
                 </tr>

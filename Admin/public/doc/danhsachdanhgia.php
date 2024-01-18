@@ -56,7 +56,7 @@
                 </tr>
               </thead>
               <tbody>
-             
+
                 <tr>
                   <td width="10"><input type="checkbox" name="check1" value="1"></td>
                   <td>MD0837</td>
@@ -71,33 +71,33 @@
                   </td>
                 </tr>
                 <tr>
-    <td width="10"><input type="checkbox" name="check2" value="2"></td>
-    <td>MD0838</td>
-    <td>Người dùng 2</td>
-    <td>Tài liệu 456</td>
-    <td>4</td>
-    <td>Nội dung đánh giá 2</td>
-    <td>01/01/2022</td>
-    <td>
-        <button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-        <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button>
-    </td>
-</tr>
+                  <td width="10"><input type="checkbox" name="check2" value="2"></td>
+                  <td>MD0838</td>
+                  <td>Người dùng 2</td>
+                  <td>Tài liệu 456</td>
+                  <td>4</td>
+                  <td>Nội dung đánh giá 2</td>
+                  <td>01/01/2022</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
+                    <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button>
+                  </td>
+                </tr>
 
-<!-- Form 3 -->
-<tr>
-    <td width="10"><input type="checkbox" name="check3" value="3"></td>
-    <td>MD0839</td>
-    <td>Người dùng 3</td>
-    <td>Tài liệu 789</td>
-    <td>3</td>
-    <td>Nội dung đánh giá 3</td>
-    <td>02/01/2022</td>
-    <td>
-        <button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-        <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button>
-    </td>
-</tr>
+                <!-- Form 3 -->
+                <tr>
+                  <td width="10"><input type="checkbox" name="check3" value="3"></td>
+                  <td>MD0839</td>
+                  <td>Người dùng 3</td>
+                  <td>Tài liệu 789</td>
+                  <td>3</td>
+                  <td>Nội dung đánh giá 3</td>
+                  <td>02/01/2022</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
+                    <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

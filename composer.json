@@ -1,0 +1,15 @@
+{
+    "name": "msifpt/wd18302_php2_tong-chi-nhan",
+    "autoload": {
+        "psr-4": {
+            "Msifpt\\Wd18302Php2TongChiNhan\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tongchinhan",
+            "email": "tongchinhan76@gmail.com"
+        }
+    ],
+    "require": {}
+}

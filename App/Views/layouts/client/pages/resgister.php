@@ -67,12 +67,15 @@
                     <div class="container-login100-form-btn">
                         <button type="submit" class="login100-form-btn">Đăng Kí</button>
                     </div>
+                    
                 </form>
                 <div class="login100-pic js-tilt" data-tilt>
                     <img src="App/Views/layouts/images/email4.jpg" alt="IMG">
                 </div>
+                
             </div>
         </div>
+        
     </div>
 
     <!-- Link Bootstrap JS (Nếu cần) -->

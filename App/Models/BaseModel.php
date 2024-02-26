@@ -98,32 +98,32 @@ abstract class BaseModel implements CrudInterface
     }
 
     public function updateData($table, $data, $condition)
-{
-    if (!empty($data)) {
-        $updateStr = '';
-        foreach ($data as $key => $value) {
-            // Kiểm tra xem giá trị có phải là một chuỗi hay không
-            if (!is_numeric($value)) {
-                $value = "'" . $value . "'"; // Thêm dấu nháy đơn nếu là một chuỗi
+    {
+        if (!empty($data)) {
+            $updateStr = '';
+            foreach ($data as $key => $value) {
+                // Kiểm tra xem giá trị có phải là một chuỗi hay không
+                if (!is_numeric($value)) {
+                    $value = "'" . $value . "'"; // Thêm dấu nháy đơn nếu là một chuỗi
+                }
+                // Thêm vào chuỗi cập nhật
+                $updateStr .= "$key=$value,";
             }
-            // Thêm vào chuỗi cập nhật
-            $updateStr .= "$key=$value,";
+            $updateStr = rtrim($updateStr, ','); // Loại bỏ dấu phẩy cuối cùng
+            // Xây dựng câu lệnh SQL cập nhật
+            $sql = "UPDATE $table SET $updateStr";
+            // Nếu có điều kiện, thêm vào câu lệnh SQL
+            if (!empty($condition)) {
+                $sql .= " WHERE idtailieu = $condition";
+            }
+            // Thực thi câu lệnh SQL
+            $status = $this->query($sql);
+            if (!$status) {
+                return false;
+            }
         }
-        $updateStr = rtrim($updateStr, ','); // Loại bỏ dấu phẩy cuối cùng
-        // Xây dựng câu lệnh SQL cập nhật
-        $sql = "UPDATE $table SET $updateStr";
-        // Nếu có điều kiện, thêm vào câu lệnh SQL
-        if (!empty($condition)) {
-            $sql .= " WHERE idtailieu = $condition";
-        }
-        // Thực thi câu lệnh SQL
-        $status = $this->query($sql);
-        if (!$status) {
-            return false;
-        }
+        return true;
     }
-    return true;
-}
 
     public function deleteData($table, $condition = ''): bool
     {
@@ -261,6 +261,49 @@ abstract class BaseModel implements CrudInterface
             // Xử lý lỗi truy vấn
             echo "Cập nhật tài liệu không thành công! Lỗi: " . $e->getMessage();
             return false;
+        }
+    }
+
+   
+    public function updatePass($id, $password)
+    {
+        try {
+            // Xây dựng truy vấn SQL
+            $query = "UPDATE nguoidung SET password = :password WHERE idnguoidung = :id";
+    
+            // Chuẩn bị truy vấn
+            $statement = $this->_connection->PDO()->prepare($query);
+    
+            // Bind các tham số
+            $statement->bindParam(':id', $id, PDO::PARAM_INT);
+            $statement->bindParam(':password', $password, PDO::PARAM_STR);
+    
+            // Thực thi truy vấn
+            $statement->execute();
+    
+            // Kiểm tra xem truy vấn đã thành công hay không
+            if ($statement->rowCount() > 0) {
+                // Truy vấn cập nhật mật khẩu thành công, trả về true
+                return true;
+            } else {
+                // Không có dòng nào bị ảnh hưởng, truy vấn không thành công, trả về false
+                return false;
+            }
+        } catch (PDOException $e) {
+            // Xử lý lỗi nếu có
+            echo "Lỗi: " . $e->getMessage();
+            return false; // Truy vấn không thành công do lỗi
+        }
+    }
+    public function getAllUsser()
+    {
+        try {
+            $query = "SELECT * FROM nguoidung";
+            $statement = $this->_connection->PDO()->query($query);
+            $data = $statement->fetchAll(PDO::FETCH_ASSOC);
+            return $data;
+        } catch (PDOException $e) {
+            die("Query failed: " . $e->getMessage());
         }
     }
 }

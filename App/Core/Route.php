@@ -5,8 +5,8 @@ namespace App\Core;
 class Route
 {
     public $url;
-    public $nameController = "HomeController";
-    public $nameMethod = "home";
+    public $nameController = "LoginController";
+    public $nameMethod = "login";
     public $path = 'App\Controllers\\'; // Sửa lại đường dẫn namespaces
     public $controller;
     public $dbConnection;
@@ -47,10 +47,10 @@ class Route
                 if (class_exists($className)) {
                     $this->controller = new $className($this->dbConnection);
                 } else {
-                    header('Location:' . ROOT_URL . 'HomeController/Error');
+                    header('Location:' . ROOT_URL . 'LoginController/Error');
                 }
             } else {
-                header('Location:' . ROOT_URL . 'HomeController/Error');
+                header('Location:' . ROOT_URL . 'LoginController/Error');
             }
         }
     }
@@ -62,7 +62,7 @@ class Route
             if (method_exists($this->controller, $this->nameMethod)) {
                 $this->controller->{$this->nameMethod}($this->url[2]);
             } else {
-                header('Location:' . ROOT_URL . 'HomeController/Error');
+                header('Location:' . ROOT_URL . 'LoginController/Error');
             }
         } else {
             if (isset($this->url[1])) {
@@ -70,7 +70,7 @@ class Route
                 if (method_exists($this->controller, $this->nameMethod)) {
                     $this->controller->{$this->nameMethod}();
                 } else {
-                    header('Location:' . ROOT_URL . 'HomeController/Error');
+                    header('Location:' . ROOT_URL . 'LoginController/Error');
                 }
             }
         }

@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Models;
-
+use Exception;
+use PDO;
+use PDOException;
 class UserModel extends BaseModel
 {
     public $tableName = 'nguoidung';
@@ -37,4 +39,15 @@ class UserModel extends BaseModel
     {
         var_dump($this->tableName);
     }
+    public function DoiPass($email, $password)
+{
+    $passmoi = $this->select()->where('email', '=', $email)->first();
+    if ($passmoi) {
+        $id = $passmoi['idnguoidung'];
+        $this->updatePass($id, ['password' => $password]);
+    }
+
+}
+
+    
 }

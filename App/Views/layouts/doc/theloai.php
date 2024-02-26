@@ -52,8 +52,8 @@
                   <tr>
                     <!-- <th width="10"><input type="checkbox" id="all"></th> -->
                     <th width="10%">ID</th>
-                    <th width="30%">Tên Thể Loại</th>
-                    <th width="40%">Tên</th>
+                 
+                    <th width="40%">Tên Thể Loại</th>
                     <th width="10%">Chức Năng</th>
                   </tr>
                 </thead>
@@ -62,10 +62,10 @@
                   <?php foreach ($data as $document) : ?>
                     <tr>
                       <td><?= isset($document['idtailieu']) ? htmlentities($document['idtailieu']) : ''; ?></td>
-                      <td><?= isset($document['idtheloai']) ? htmlentities($document['idtheloai']) : ''; ?></td>
+                   
                       <td><?= isset($document['ten']) ? htmlentities($document['ten']) : ''; ?></td>
                       <td>
-                        <a href="?url=TaiLieuController/deleteTaiLieu/<?= $document['idtailieu']; ?>" class="btn btn-danger">Xóa</a>
+                      
                         <a href="?url=SuaTaiLieuController&id=<?= $document['idtailieu']; ?>" class="btn btn-primary btn-sm edit" title="Sửa"><i class="fa fa-edit"></i></a>
                       </td>
 

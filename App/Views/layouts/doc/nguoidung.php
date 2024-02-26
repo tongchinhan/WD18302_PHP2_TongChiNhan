@@ -54,114 +54,37 @@
               <table class="table table-hover table-bordered" id="sampleTable">
                 <thead>
                   <tr>
-                    <th width="10"><input type="checkbox" id="all"></th>
-                    <th>ID</th>
-                    <th>Mã Người Dùng</th>
-                    <th>Họ Tên</th>
-                    <th>Email</th>
-                    <th>Mật Khẩu</th>
-                    <th>Ngày Sinh</th>
-                    <th>giới Tính</th>
-                    <th>Số Điện Thoại</th>
-                    <th>Địa Chỉ</th>
-                    <th>Vai Trò</th>
-                    <th width="100">Chức Năng</th>
+      
+                    <th width="10%">ID Người Dùng</th>
+                    <th width="20%">Tên</th>
+                    <th width="20%">Email</th>
+                    <th width="10%">Số Điện Thoại</th>
+                    <th width="20%">Địa Chỉ</th>
+                    <th width="10%">Chức Năng</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                    <td>MD0837</td>
-                    <td>LEE Min Huy</td>
-                    <td>minhhuybeoicongmail.com</td>
-                    <td>0395950134</td>
-                    <td>Khách</td>
-                    <td>31/12/2005</td>
-                    <td>An Giang</td>
-                    <!-- <td><span class="badge bg-success">Hoàn thành</span></td> -->
-                    <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
-                  <tr>
-                    <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                    <td>MD0837</td>
-                    <td>LEE Min Huy</td>
-                    <td>minhhuybeoicongmail.com</td>
-                    <td>0395950134</td>
-                    <td>Khách</td>
-                    <td>31/12/2005</td>
-                    <td>An Giang</td>
-                    <!-- <td><span class="badge bg-success">Hoàn thành</span></td> -->
-                    <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
-                  <tr>
-                    <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                    <td>MD0837</td>
-                    <td>LEE Min Huy</td>
-                    <td>minhhuybeoicongmail.com</td>
-                    <td>0395950134</td>
-                    <td>Khách</td>
-                    <td>31/12/2005</td>
-                    <td>An Giang</td>
-                    <!-- <td><span class="badge bg-success">Hoàn thành</span></td> -->
-                    <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
-                  <tr>
-                    <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                    <td>MD0837</td>
-                    <td>LEE Min Huy</td>
-                    <td>minhhuybeoicongmail.com</td>
-                    <td>0395950134</td>
-                    <td>Khách</td>
-                    <td>31/12/2005</td>
-                    <td>An Giang</td>
-                    <!-- <td><span class="badge bg-success">Hoàn thành</span></td> -->
-                    <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
-                  <tr>
-                    <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                    <td>MD0837</td>
-                    <td>LEE Min Huy</td>
-                    <td>minhhuybeoicongmail.com</td>
-                    <td>0395950134</td>
-                    <td>Khách</td>
-                    <td>31/12/2005</td>
-                    <td>An Giang</td>
-                    <!-- <td><span class="badge bg-success">Hoàn thành</span></td> -->
-                    <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
-                  <tr>
-                    <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                    <td>MD0837</td>
-                    <td>LEE Min Huy</td>
-                    <td>minhhuybeoicongmail.com</td>
-                    <td>0395950134</td>
-                    <td>Khách</td>
-                    <td>31/12/2005</td>
-                    <td>An Giang</td>
-                    <!-- <td><span class="badge bg-success">Hoàn thành</span></td> -->
-                    <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
-                  <tr>
-                    <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                    <td>MD0837</td>
-                    <td>LEE Min Huy</td>
-                    <td>minhhuybeoicongmail.com</td>
-                    <td>0395950134</td>
-                    <td>Khách</td>
-                    <td>31/12/2005</td>
-                    <td>An Giang</td>
-                    <!-- <td><span class="badge bg-success">Hoàn thành</span></td> -->
-                    <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
-                  
-                </tbody>
+                <?php if (!empty($data)) : ?>
+                  <?php foreach ($data as $document) : ?>
+                    <tr>
+                      <td><?= isset($document['idnguoidung']) ? htmlentities($document['idnguoidung']) : ''; ?></td>
+                      <td><?= isset($document['ten']) ? htmlentities($document['ten']) : ''; ?></td>
+                      <td><?= isset($document['email']) ? htmlentities($document['email']) : ''; ?></td>
+                      <td><?= isset($document['sdt']) ? htmlentities($document['sdt']) : ''; ?></td>
+                      <td><?= isset($document['diachi']) ? htmlentities($document['diachi']) : ''; ?></td>
+                   
+                      <td>
+                        <a href="?url=TaiLieuController/deleteTaiLieu/<?= $document['idtailieu']; ?>" class="btn btn-danger">Xóa</a>
+                        <a href="?url=SuaTaiLieuController&id=<?= $document['idtailieu']; ?>" class="btn btn-primary btn-sm edit" title="Sửa"><i class="fa fa-edit"></i></a>
+                      </td>
+
+                      </td>
+                    </tr>
+                  <?php endforeach; ?>
+                <?php else : ?>
+
+                <?php endif; ?>
+              </tbody>
               </table>
             </div>
           </div>

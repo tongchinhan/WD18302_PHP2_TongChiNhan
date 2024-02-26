@@ -27,7 +27,7 @@
                 <li><a class="app-menu__item <?php echo ($act == 'danhsachtheloai') ? 'active' : ''; ?>" href="?url=TheLoaiController"><i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Danh Sách Thể Loại</span></a>
                 </li>
                 <li><a class="app-menu__item <?php echo ($act == 'danhsachbinhluan') ? 'active' : ''; ?>" href="?url=BinhLuanController"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Danh Sách Bình Luận</span></a></li>
-                <li><a class="app-menu__item <?php echo ($act == 'danhsachnguoidung') ? 'active' : ''; ?>" href="?url=NguoiDungController"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Danh Sách Người Dùng</span></a>
+                <li><a class="app-menu__item <?php echo ($act == 'danhsachnguoidung') ? 'active' : ''; ?>" href="?url=NguoiDungController/loaduser"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Danh Sách Người Dùng</span></a>
                 </li>
                 <li><a class="app-menu__item <?php echo ($act == 'danhsachdanhgia') ? 'active' : ''; ?>" href="?url=DanhGiaController"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Danh Sách Đánh Gía</span></a></li>
                 <!-- Các mục khác -->

@@ -17,10 +17,10 @@
                                 <label class="control-label">Tên Tài Liệu</label>
                                 <input class="form-control" type="text" name="ten">
                             </div> 
-                            <!-- <div class="form-group col-md-4">
+                            <div class="form-group col-md-4">
                                 <label class="control-label">ID Thẻ Loại</label>
                                 <input class="form-control" type="number" name="idtheloai">
-                            </div> -->
+                            </div>
                             <div class="form-group col-md-4">
                                 <label class="control-label">Mô Tả</label>
                                 <input class="form-control" type="text" name="mota">

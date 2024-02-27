@@ -74,8 +74,8 @@
                       <td><?= isset($document['diachi']) ? htmlentities($document['diachi']) : ''; ?></td>
                    
                       <td>
-                        <a href="?url=TaiLieuController/deleteTaiLieu/<?= $document['idtailieu']; ?>" class="btn btn-danger">Xóa</a>
-                        <a href="?url=SuaTaiLieuController&id=<?= $document['idtailieu']; ?>" class="btn btn-primary btn-sm edit" title="Sửa"><i class="fa fa-edit"></i></a>
+                      <a href="?url=NguoiDungController/deleteUs/<?= $document['idnguoidung']; ?>" class="btn btn-danger">Xóa</a>
+                        <a href="?url=SuaNguoiDungController/&id=<?= $document['idnguoidung']; ?>" class="btn btn-primary btn-sm edit" title="Sửa"><i class="fa fa-edit"></i></a>
                       </td>
 
                       </td>

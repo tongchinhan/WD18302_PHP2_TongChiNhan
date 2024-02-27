@@ -22,14 +22,14 @@ class NguoiDungModel extends BaseModel
     {
         $TaiLieu = $this->insertData($this->table, $data);
     }
-    public function deleteDocument($id)
+    public function deleteUser($id)
     {
 
-        return $this->delete($id);
+        return $this->deleteUs($id);
     }
-    public function updateDocumett($data, $id)
+    public function updateUsser($data, $id)
     {
 
-        return $this->updateData($this->table, $data, $id);
+        return $this->updateUs($this->table, $data, $id);
     }
 }

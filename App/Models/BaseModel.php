@@ -264,23 +264,23 @@ abstract class BaseModel implements CrudInterface
         }
     }
 
-   
+
     public function updatePass($id, $password)
     {
         try {
             // Xây dựng truy vấn SQL
             $query = "UPDATE nguoidung SET password = :password WHERE idnguoidung = :id";
-    
+
             // Chuẩn bị truy vấn
             $statement = $this->_connection->PDO()->prepare($query);
-    
+
             // Bind các tham số
             $statement->bindParam(':id', $id, PDO::PARAM_INT);
             $statement->bindParam(':password', $password, PDO::PARAM_STR);
-    
+
             // Thực thi truy vấn
             $statement->execute();
-    
+
             // Kiểm tra xem truy vấn đã thành công hay không
             if ($statement->rowCount() > 0) {
                 // Truy vấn cập nhật mật khẩu thành công, trả về true
@@ -306,4 +306,56 @@ abstract class BaseModel implements CrudInterface
             die("Query failed: " . $e->getMessage());
         }
     }
+    public function deleteUs(int $id): bool
+    {
+        $this->_query = "DELETE FROM $this->tableName WHERE idnguoidung=$id";
+
+        $stmt   = $this->_connection->PdO()->prepare($this->_query);
+        $stmt->execute();
+        $affected_rows = $stmt->rowCount();
+        return $affected_rows;
+    }
+    public function updateUs($updatedData)
+    {
+        try {
+            // Sử dụng prepared statement để tránh SQL injection
+            $query = "UPDATE nguoidung SET ten = :ten, email = :email, sdt = :sdt, diachi = :diachi WHERE idnguoidung = :idnguoidung";
+            $statement = $this->_connection->PDO()->prepare($query);
+    
+            // Bind các giá trị từ dữ liệu được chuyển vào
+            $statement->bindParam(':ten', $updatedData['ten']);
+            $statement->bindParam(':email', $updatedData['email']);
+            $statement->bindParam(':sdt', $updatedData['sdt']);
+            $statement->bindParam(':diachi', $updatedData['diachi']);
+         
+    
+            // Thực hiện câu lệnh SQL để cập nhật người dùng
+            $result = $statement->execute();
+    
+            // Trả về true nếu cập nhật thành công và false nếu không thành công
+            return $result;
+        } catch (PDOException $e) {
+            // Xử lý lỗi truy vấn
+            echo "Cập nhật người dùng không thành công! Lỗi: " . $e->getMessage();
+            return false;
+        }
+    }
+    
+    public function getUsertById($documentId)
+    {
+        try {
+            $query = "SELECT * FROM  nguoidung WHERE idnguoidung = :idnguoidung";
+            $statement = $this->_connection->PDO()->prepare($query);
+            $statement->bindParam(':idnguoidung', $documentId, PDO::PARAM_INT);
+            $statement->execute();
+            $document = $statement->fetch(PDO::FETCH_ASSOC);
+            return $document;
+        } catch (PDOException $e) {
+            // Xử lý lỗi truy vấn
+            echo "Lỗi truy vấn: " . $e->getMessage();
+            return false;
+        }
+    }
+    
+
 }

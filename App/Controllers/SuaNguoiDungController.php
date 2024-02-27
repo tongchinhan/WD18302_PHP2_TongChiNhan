@@ -17,7 +17,7 @@ class SuaNguoiDungController extends BaseController
         parent::__construct();
         $this->dbConnection = $dbConnection;
         $this->_renderBase = new RenderBase();
-        $this->nguoiDungModel = new NguoiDungModel($this->dbConnection);
+      
         $this->SuaNguoiDungController();
     }
 

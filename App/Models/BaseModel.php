@@ -321,17 +321,18 @@ abstract class BaseModel implements CrudInterface
             // Sử dụng prepared statement để tránh SQL injection
             $query = "UPDATE nguoidung SET ten = :ten, email = :email, sdt = :sdt, diachi = :diachi WHERE idnguoidung = :idnguoidung";
             $statement = $this->_connection->PDO()->prepare($query);
-    
+
             // Bind các giá trị từ dữ liệu được chuyển vào
-            $statement->bindParam(':ten', $updatedData['ten']);
-            $statement->bindParam(':email', $updatedData['email']);
-            $statement->bindParam(':sdt', $updatedData['sdt']);
-            $statement->bindParam(':diachi', $updatedData['diachi']);
-         
-    
+            $statement->bindValue(':ten', $updatedData['ten']);
+            $statement->bindValue(':email', $updatedData['email']);
+            $statement->bindValue(':sdt', $updatedData['sdt']);
+            $statement->bindValue(':diachi', $updatedData['diachi']);
+            
+
+
             // Thực hiện câu lệnh SQL để cập nhật người dùng
             $result = $statement->execute();
-    
+
             // Trả về true nếu cập nhật thành công và false nếu không thành công
             return $result;
         } catch (PDOException $e) {
@@ -340,7 +341,7 @@ abstract class BaseModel implements CrudInterface
             return false;
         }
     }
-    
+
     public function getUsertById($documentId)
     {
         try {
@@ -356,6 +357,4 @@ abstract class BaseModel implements CrudInterface
             return false;
         }
     }
-    
-
 }

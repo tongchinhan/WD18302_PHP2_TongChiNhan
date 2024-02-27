@@ -31,7 +31,7 @@
                                 <input class="form-control" type="text" name="diachi">
                             </div> 
                             <button class="btn btn-save" type="submit" name="saveDocument">Lưu lại</button>
-                            <a class="btn btn-cancel" href="?url=NguoiDungController">Hủy bỏ</a>
+                            <a class="btn btn-cancel" href="?url=TaiLieuController">Hủy bỏ</a>
                         </form>
 
                     </div>

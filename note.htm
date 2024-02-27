@@ -1,0 +1,29 @@
+ROUTE : Xác định URL và Controller tương ứng: Route xác định URL được yêu cầu và xác định controller nào sẽ xử lý yêu cầu đó. 
+Điều này thường được thực hiện thông qua các quy tắc định tuyến (routing rules) được cấu hình trước.
+
+lớp Render đóng vai trò quan trọng trong việc hiển thị nội dung trang web
+
+
+Trong đoạn mã trên, lớp RenderBase đóng vai trò là một công cụ hỗ trợ trong việc hiển thị giao diện người dùng của ứng dụng. 
+Cụ thể, nó chứa các phương thức để hiển thị các phần khác nhau của giao diện người dùng như header, head, 
+footer và các phần liên quan đến đăng nhập.
+
+là một controller trong ứng dụng của bạn, chịu trách nhiệm điều hướng yêu cầu từ người dùng đến các hành động tương ứng
+Phương thức __construct(): Phương thức khởi tạo của HomeController gọi phương thức khởi tạo của lớp cha (BaseController) 
+và khởi tạo một đối tượng RenderBase để sử dụng cho việc hiển thị giao diện.
+
+
+Trong đoạn mã trên, có một lớp abstract được định nghĩa là BaseModel.
+Triển khai các phương thức của CrudInterface: Các phương thức trong CrudInterface, chẳng hạn như create(), read(), update(), và delete(), có thể được triển khai trong BaseModel.
+ Điều này giúp đảm bảo rằng tất cả các model kế thừa từ BaseModel
+
+ Interface này có thể được sử dụng để định nghĩa các phương thức cần thiết
+  cho việc thực hiện các hoạt động CRUD (Create, Read, Update, Delete) trên các model trong ứng dụng.
+
+Namespace cho phép bạn đặt các class, interface, function và các thành phần khác vào các nhóm logic riêng biệt,
+   giúp tránh xung đột tên và giúp quản lý mã lệnh dễ dàng hơn.
+
+
+   implements được sử dụng để chỉ định rằng một lớp sẽ triển khai (implement) một hoặc nhiều interfaces
+   Khi một lớp triển khai một interface bằng cách sử dụng implements,
+ nó phải cung cấp triển khai cho tất cả các phương thức được định nghĩa trong interface đó.

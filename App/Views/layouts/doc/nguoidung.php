@@ -23,7 +23,7 @@
                 <div class="col-sm-2">
   
                   <a class="btn btn-add btn-sm" href="form-add-don-hang.html" title="Thêm"><i class="fas fa-plus"></i>
-                    Tạo mới đơn hàng</a>
+                    Tạo mới người dùng</a>
                 </div>
                 <div class="col-sm-2">
                   <a class="btn btn-delete btn-sm nhap-tu-file" type="button" title="Nhập" onclick="myFunction(this)"><i
@@ -56,11 +56,10 @@
                   <tr>
       
                     <th width="10%">ID Người Dùng</th>
-                    <th width="20%">Tên</th>
-                    <th width="20%">Email</th>
-                    <th width="10%">Số Điện Thoại</th>
+                    <th width="30%">Tên</th>
+                    <th width="30%">Email</th>
+                    <th width="20%">Số Điện Thoại</th>
                     <th width="20%">Địa Chỉ</th>
-                    <th width="10%">Chức Năng</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -72,12 +71,6 @@
                       <td><?= isset($document['email']) ? htmlentities($document['email']) : ''; ?></td>
                       <td><?= isset($document['sdt']) ? htmlentities($document['sdt']) : ''; ?></td>
                       <td><?= isset($document['diachi']) ? htmlentities($document['diachi']) : ''; ?></td>
-                   
-                      <td>
-                      <a href="?url=NguoiDungController/deleteUs/<?= $document['idnguoidung']; ?>" class="btn btn-danger">Xóa</a>
-                        <a href="?url=SuaNguoiDungController/&id=<?= $document['idnguoidung']; ?>" class="btn btn-primary btn-sm edit" title="Sửa"><i class="fa fa-edit"></i></a>
-                      </td>
-
                       </td>
                     </tr>
                   <?php endforeach; ?>

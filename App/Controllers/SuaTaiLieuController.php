@@ -16,7 +16,7 @@ class SuaTaiLieuController extends BaseController
         parent::__construct();
         $this->dbConnection = $dbConnection;
         $this->_renderBase = new RenderBase();
-        $this->taiLieuModel = new TaiLieuModel($this->dbConnection);
+        // $this->taiLieuModel = new TaiLieuModel($this->dbConnection);
         $this->SuaTaiLieuController();
     }
 

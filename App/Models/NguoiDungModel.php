@@ -7,11 +7,12 @@ class NguoiDungModel extends BaseModel
     protected $name = "NguoiDungModel";
     public $tableName = 'nguoidung';
     public $table = "nguoidung";
-
+ // Lấy tất cả người dùng
     public function getAllUs()
     {
         return $this->getAllUsser();
     }
+    // Tạo mới một bản ghi người dùng
     public function create($data)
     {
         var_dump($this->tableName);

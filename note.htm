@@ -27,3 +27,17 @@ Namespace cho phép bạn đặt các class, interface, function và các thành
    implements được sử dụng để chỉ định rằng một lớp sẽ triển khai (implement) một hoặc nhiều interfaces
    Khi một lớp triển khai một interface bằng cách sử dụng implements,
  nó phải cung cấp triển khai cho tất cả các phương thức được định nghĩa trong interface đó.
+
+ public:
+
+Các thuộc tính và phương thức được đánh dấu là public có thể truy cập từ bên ngoài của lớp, bao gồm cả từ các lớp con và bên ngoài của namespace.
+Điều này có nghĩa là bất kỳ đoạn mã nào cũng có thể truy cập và sử dụng các thuộc tính và phương thức công cộng một cách trực tiếp.
+
+private:
+
+Các thuộc tính và phương thức được đánh dấu là private chỉ có thể truy cập từ bên trong của lớp đó.
+Điều này có nghĩa là các thuộc tính và phương thức private không thể truy cập từ bên ngoài lớp, bao gồm cả từ các lớp con và các phần tử bên ngoài của namespace.
+protected:
+
+Các thuộc tính và phương thức được đánh dấu là protected có thể truy cập từ bên trong của lớp đó và từ các lớp con kế thừa từ lớp đó.
+Điều này có nghĩa là các thuộc tính và phương thức protected không thể truy cập từ bên ngoài lớp, nhưng vẫn có thể truy cập từ các lớp con của nó.

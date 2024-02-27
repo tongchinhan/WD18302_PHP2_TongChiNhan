@@ -327,7 +327,7 @@ abstract class BaseModel implements CrudInterface
             $statement->bindValue(':email', $updatedData['email']);
             $statement->bindValue(':sdt', $updatedData['sdt']);
             $statement->bindValue(':diachi', $updatedData['diachi']);
-            
+
 
 
             // Thực hiện câu lệnh SQL để cập nhật người dùng

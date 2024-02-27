@@ -101,10 +101,11 @@ class TaiLieuController extends BaseController
             if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
                 move_uploaded_file($_FILES['img']['tmp_name'], 'App/Views/layouts/images/' . $new_name);
                 
-                // Tiếp tục thực hiện các thao tác khác ở đây, chẳng hạn như lưu tên file vào cơ sở dữ liệu
+               
             }
         }
         $taiLieuModel = new TaiLieuModel();
+         // Tạo một mảng dữ liệu mới để cập nhật tài liệu
         $data = [
             'ten' => $name,
            

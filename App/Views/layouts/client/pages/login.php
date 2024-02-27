@@ -7,7 +7,7 @@
             <div class="wrap-login100">
             <form class="login100-form validate-form" action="?url=LoginController/handleLogin" method="post">
                     <span class="login100-form-title">
-                        <b>ĐĂNG NHẬP HỆ THỐNG POS</b>
+                        <b>ĐĂNG NHẬP HỆ THỐNG</b>
                     </span>
                     <div class="wrap-input100 validate-input">
                         <input class="input100" type="text" placeholder="Tài khoản quản trị" name="email" id="email">
